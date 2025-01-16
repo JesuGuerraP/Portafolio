@@ -909,6 +909,7 @@ footer .copyright {
 
 
 /*resposive*/
+/*resposive*/
 @media screen and (max-width: 980px) {
     nav {
         display: none; /* Oculta el menú de navegación normal */
@@ -938,6 +939,62 @@ footer .copyright {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
         text-align: center; /* Centra el texto en los elementos de la lista */
+    }
+    .contenedor-header header {
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: flex-start; /* Alinea elementos al inicio */
+    }
+    .contenedor-header header ul {
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: flex-start; /* Alinea elementos al inicio */
+    }
+    .inicio {
+        height: auto; /* Ajusta la altura para mejor visualización */
+        padding: 20px; /* Añade padding para el contenido */
+    }
+
+    .sobremi .fila {
+        flex-direction: column; /* Apila columnas en dispositivos móviles */
+    }
+
+    .sobremi .fila .col {
+        width: 100%; /* Cada columna ocupa 100% del ancho */
+    }
+
+    .curriculum .fila {
+        flex-direction: column; /* Apila columnas en dispositivos móviles */
+    }
+
+    .curriculum .fila .col {
+        width: 100%; /* Cada columna ocupa 100% del ancho */
+        padding: 0; /* Elimina padding para mejor ajuste */
+        margin-bottom: 20px; /* Añade espacio entre columnas */
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+    }
+
+    .projects-section .header h1,
+    .projects-section .header p {
+        font-size: 24px; /* Ajusta el tamaño de fuente para mejor legibilidad */
+    }
+
+    .project-card {
+        margin-bottom: 20px; /* Añade espacio entre tarjetas de proyectos */
+    }
+
+    .contacto .fila {
+        flex-direction: column; /* Apila columnas en dispositivos móviles */
+    }
+
+    .contacto .col {
+        width: 100%; /* Cada columna ocupa 100% del ancho */
+        margin-bottom: 20px; /* Añade espacio entre columnas */
+    }
+
+    footer .contenido-footer {
+        flex-direction: column; /* Cambia a columna para mejor organización */
     }
 }
 
