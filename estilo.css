@@ -940,17 +940,24 @@ footer .copyright {
         padding: 10px 0;
         text-align: center; /* Centra el texto en los elementos de la lista */
     }
+
+    .contenedor-header {
+        margin-bottom:50px; /* Añade espacio entre el menú y la sección de inicio */
+    }
+
     .contenedor-header header {
         flex-direction: column; /* Cambia la dirección a columna */
         align-items: flex-start; /* Alinea elementos al inicio */
     }
+
     .contenedor-header header ul {
         flex-direction: column; /* Cambia la dirección a columna */
         align-items: flex-start; /* Alinea elementos al inicio */
     }
+
     .inicio {
         height: auto; /* Ajusta la altura para mejor visualización */
-        padding: 20px; /* Añade padding para el contenido */
+        padding: 60px  20px; /* Añade padding para el contenido */
     }
 
     .sobremi .fila {
@@ -1005,5 +1012,17 @@ footer .copyright {
         display: block; /* Cambia a bloque para apilar elementos */
     }
 
+    .habilidades .fila .col {
+        width: 100%; /* Cada columna ocupa 100% del ancho */
+        padding: 0; /* Elimina padding para mejor ajuste */
+        margin-bottom: 20px; /* Añade espacio entre columnas */
+    }
 
+    .projects-grid {
+        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+    }
+
+    .project-card {
+        margin-bottom: 20px; /* Añade espacio entre tarjetas de proyectos */
+    }
 }
