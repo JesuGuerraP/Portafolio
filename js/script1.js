@@ -56,7 +56,7 @@ window.onscroll =function(){
 
 function descargarCV() {
    const link = document.createElement('a');
-   link.href='CV Jesús Guerra Pineda.pdf';
+   link.href='CV Jesús David Guerra Pineda';
    link.download = 'CV Jesús Guerra.pdf';
    document.body.appendChild(link);
    link.click(); 
