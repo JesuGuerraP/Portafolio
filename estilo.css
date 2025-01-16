@@ -911,6 +911,10 @@ footer .copyright {
 /*resposive*/
 @media screen and (max-width: 980px) {
     nav {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+    }
+
+    nav ul {
         display: none; /* Oculta el menú de navegación normal */
     }
 
@@ -919,19 +923,14 @@ footer .copyright {
         cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     }
 
-    nav.responsive {
+    nav.responsive ul {
         display: block;
         position: absolute;
         right: 0;
         top: 75px;
         background-color: #252a2e;
-        width: 180px;
+        width: 100%; /* Ancho completo para el menú responsivo */
         z-index: 100; /* Asegura que el menú esté por encima de otros elementos */
-    }
-
-    nav.responsive ul {
-        display: block !important;
-        padding: 0;
     }
 
     nav.responsive ul li {
@@ -942,11 +941,76 @@ footer .copyright {
 }
 
 @media screen and (max-width: 700px) {
+    /* Secciones que deben apilarse */
     .sobremi .fila,
     .habilidades .fila,
-    .curriculum .fila {
+    .curriculum .fila,
+    .projects-grid {
         display: block; /* Cambia a bloque para apilar elementos */
+        width: 100%; /* Asegura que ocupen el 100% del ancho */
+        padding: 10px; /* Espaciado interno */
     }
 
+    /* Estilos para imágenes */
+    img {
+        max-width: 100%; /* Asegura que las imágenes sean responsivas */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    /* Estilos para tablas */
+    table {
+        width: 100%; /* Asegura que las tablas ocupen el 100% del ancho */
+        border-collapse: collapse; /* Elimina el espacio entre celdas */
+    }
+
+    th, td {
+        padding: 10px; /* Espaciado interno */
+        text-align: left; /* Alineación del texto */
+        border: 1px solid #ddd; /* Borde de las celdas */
+    }
+
+    /* Estilos para columnas en contacto */
+    .contacto .fila {
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    }
+
+    .contacto .col {
+        flex: 1; /* Permite que las columnas se ajusten automáticamente */
+        min-width: 300px; /* Asegura un mínimo ancho para columnas en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    /* Ajustes para botones */
+    .inicio button,
+    .contacto button {
+        width: 100%; /* Botones ocupan el 100% del ancho en pantallas pequeñas */
+    }
+
+    /* Ajustes para cuadros */
+    .sobremi .contenido-seccion .item-sobremi,
+    .curriculum .fila .item {
+        margin-bottom: 20px; /* Espaciado entre cuadros */
+        padding: 15px; /* Espaciado interno */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustes adicionales para teléfonos móviles */
+    nav {
+        padding: 5px 10px; /* Reduce el padding en la navegación */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia la dirección del menú a columna */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce el margen entre los elementos del menú */
+    }
+
+    .inicio .contenido-banner {
+        max-width: 90%; /* Aumenta el ancho máximo en móviles */
+        padding: 15px; /* Espaciado interno */
+    }
 
 }
