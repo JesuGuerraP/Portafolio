@@ -56,8 +56,8 @@ window.onscroll =function(){
 
 function descargarCV() {
    const link = document.createElement('a');
-   link.href='CV Jesús Guerra.pdf';
-   link.download = 'CV Jesús Guerra.pdf';
+   link.href='CV - JESÚS GUERRA PINEDA.pdf';
+   link.download = 'CV - JESÚS GUERRA PINEDA.pdf';
    document.body.appendChild(link);
    link.click(); 
    document.body.removeChild(link);
