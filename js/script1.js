@@ -17,6 +17,7 @@ document.getElementById("nav").classList="";
 menuVisible=false;
 }
 
+
 //funcion que aplica las animaciones a las habilidades
 function efectoHabilidad(){
     var habilidades= document.getElementById("habilidades");
@@ -56,8 +57,8 @@ window.onscroll =function(){
 
 function descargarCV() {
    const link = document.createElement('a');
-   link.href='CV - JESÚS GUERRA PINEDA.pdf';
-   link.download = 'CV - JESÚS GUERRA PINEDA.pdf';
+   link.href='CV Jesús Guerra.pdf';
+   link.download = 'CV Jesús Guerra.pdf';
    document.body.appendChild(link);
    link.click(); 
    document.body.removeChild(link);
@@ -132,3 +133,20 @@ document.addEventListener('DOMContentLoaded', () => {
       observer.observe(card);
   });
 });
+
+function moveSlide(button, direction) {
+    const carousel = button.parentElement;
+    const carouselInner = carousel.querySelector('.carousel-inner');
+    const items = carouselInner.querySelectorAll('.carousel-item');
+    const activeItem = carouselInner.querySelector('.carousel-item.active');
+    let index = Array.from(items).indexOf(activeItem);
+
+    index += direction;
+    if (index >= items.length) index = 0;
+    if (index < 0) index = items.length - 1;
+
+    items.forEach(item => item.classList.remove('active'));
+    items[index].classList.add('active');
+
+    carouselInner.style.transform = `translateX(-${index * 100}%)`;
+}
