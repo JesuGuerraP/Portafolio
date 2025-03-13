@@ -117,6 +117,7 @@ html{
         margin: 40px 5px;
         font-size: 20px;
         transition: .3s;
+          margin-top: 20px;
     }
     .inicio .contenido-banner .redes a:hover{
         background-color: #019779;
