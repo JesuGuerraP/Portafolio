@@ -69,8 +69,11 @@ html{
         height: 100vh;
         color: #fff;
         display: flex;
+        justify-content: center;
         align-items: center;
-        margin-top: 90px;
+        padding: 70px;
+        box-sizing: border-box;
+        margin-top: 20px;
         
     }
     
