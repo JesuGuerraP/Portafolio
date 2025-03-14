@@ -933,8 +933,7 @@ footer .copyright {
 }
 
 
-/*resposive*/
-/*resposive*/
+/* Responsive Design */
 @media screen and (max-width: 980px) {
     nav {
         display: none; /* Oculta el menú de navegación normal */
@@ -967,7 +966,7 @@ footer .copyright {
     }
 
     .contenedor-header {
-        margin-bottom:50px; /* Añade espacio entre el menú y la sección de inicio */
+        margin-bottom: 70px; /* Añade espacio entre el menú y la sección de inicio */
     }
 
     .contenedor-header header {
@@ -982,38 +981,27 @@ footer .copyright {
 
     .inicio {
         height: auto; /* Ajusta la altura para mejor visualización */
-        padding: 60px  20px; /* Añade padding para el contenido */
+        padding: 60px 20px; /* Añade padding para el contenido */
+        margin-top: 60px; /* Añade margen superior para separar del menú */
     }
 
-    .sobremi .fila {
-        flex-direction: column; /* Apila columnas en dispositivos móviles */
+    .sobremi {
+        margin-top: 0px; /* Añade margen superior para separar de la sección de inicio */
     }
 
-    .sobremi .fila .col {
-        width: 100%; /* Cada columna ocupa 100% del ancho */
-    }
-
-    .curriculum .fila {
-        flex-direction: column; /* Apila columnas en dispositivos móviles */
-    }
-
-    .curriculum .fila .col {
-        width: 100%; /* Cada columna ocupa 100% del ancho */
-        padding: 0; /* Elimina padding para mejor ajuste */
-        margin-bottom: 20px; /* Añade espacio entre columnas */
-    }
-
+    .sobremi .fila,
+    .habilidades .fila,
+    .curriculum .fila,
     .projects-grid {
-        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+        flex-direction: column; /* Apila columnas en dispositivos móviles */
     }
 
-    .projects-section .header h1,
-    .projects-section .header p {
-        font-size: 24px; /* Ajusta el tamaño de fuente para mejor legibilidad */
-    }
-
+    .sobremi .fila .col,
+    .habilidades .fila .col,
+    .curriculum .fila .col,
     .project-card {
-        margin-bottom: 20px; /* Añade espacio entre tarjetas de proyectos */
+        width: 100%; /* Cada columna ocupa 100% del ancho */
+        margin-bottom: 20px; /* Añade espacio entre columnas */
     }
 
     .contacto .fila {
@@ -1051,3 +1039,4 @@ footer .copyright {
         margin-bottom: 20px; /* Añade espacio entre tarjetas de proyectos */
     }
 }
+
